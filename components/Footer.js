@@ -41,8 +41,21 @@ export default function Footer() {
             <img src="/logo--blue.svg" alt="logo" />
           </a>
 
-          <div className="column">
-            <p>Signup form</p>
+          <div className="column footer-navigation">
+            <h4>NYC Campaign for an<br/>Elected Civilian Review Board</h4>
+            <Link href="/join">
+              <a className="mainnav-anchor">Join the Campaign</a>
+            </Link>
+            <Link scroll={false} href="/petition">
+              <a className={`mainnav-anchor`}>Sign the Petition</a>
+            </Link>
+            <Link scroll={false} href="/legislation">
+              <a className="mainnav-anchor">The Legislation</a>
+            </Link>
+            <Link scroll={false} href="/endorse">
+              <a className="mainnav-anchor">Endorsers</a>
+            </Link>
+
           </div>
 
           <div className="column footer-navigation">
