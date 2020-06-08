@@ -5,8 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "NODE_ENV=production node server",
-    "heroku-postbuild": "next build"
+    "start": "next start -p $PORT",
   },
   "dependencies": {
     "babel-plugin-inline-dotenv": "^1.5.0",
