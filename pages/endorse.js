@@ -1,13 +1,13 @@
 import { getPage } from '../services/contentful-queries';
 
-import EndorsePage from '../components/EndorsePage';
+import Page from '../components/Page';
 
-const EndorsePageContainer = (props) => <EndorsePage {...props} />
+const EndorsePageContainer = (props) => <Page {...props} />
 
 EndorsePageContainer.getInitialProps = async ({ err, req, res, pathname, query, asPath }) => {
 
   const endorsePage = await getPage({ slug: 'endorse' });
-  return { endorsePage, pathname };
+  return { ...endorsePage, pathname };
 }
 
 export default EndorsePageContainer

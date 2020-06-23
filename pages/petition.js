@@ -1,8 +1,8 @@
 import { getPage } from '../services/contentful-queries';
 
-import PetitionPage from '../components/PetitionPage';
+import Page from '../components/Page';
 
-const PetitionPageContainer = (props) => <PetitionPage {...props} />
+const PetitionPageContainer = (props) => <Page {...props} />
 
 PetitionPageContainer.getInitialProps = async ({ err, req, res, pathname, query, asPath }) => {
 

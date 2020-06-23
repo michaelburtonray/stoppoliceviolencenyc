@@ -1,13 +1,13 @@
 import { getPage } from '../services/contentful-queries';
 
-import FaqPage from '../components/FaqPage';
+import Page from '../components/Page';
 
-const FaqPageContainer = (props) => <FaqPage {...props} />
+const FaqPageContainer = (props) => <Page {...props} />
 
 FaqPageContainer.getInitialProps = async ({ err, req, res, pathname, query, asPath }) => {
 
   const faqPage = await getPage({ slug: 'faq' });
-  return { faqPage, pathname };
+  return { ...faqPage, pathname };
 }
 
 export default FaqPageContainer

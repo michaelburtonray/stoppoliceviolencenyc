@@ -1,13 +1,13 @@
 import Head from 'next/head';
 import Row from './Row';
 
-export default function JoinPage({ fields }) {
+export default function Page({fields}) {
   const { title, metaDescription, rows } = fields;
 
   return (
-    <div className="join-page">
+    <div className="page">
       <Head>
-        <title>{title}</title>
+        <title>{title} | {process.env.NEXT_PUBLIC_WEBSITE_TITLE}</title>
         <meta name="description" content={metaDescription} />
       </Head>
       {rows && rows.filter(hasContentType).map((row, idx) => (
@@ -18,12 +18,13 @@ export default function JoinPage({ fields }) {
         />
       ))}
       <style jsx>{`
-        .join-page {
+        .page a {
+          color: var(--persimmon);
         }
       `}</style>
     </div>
-  );
-};
+  )
+}
 
 const hasContentType = (entry) => {
   return entry.sys.contentType;

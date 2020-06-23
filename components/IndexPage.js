@@ -7,7 +7,7 @@ const IndexPage = ({ fields, pathname }) => {
   return (
     <div className="home-page">
       <Head>
-        <title>{title}</title>
+        <title>{process.env.NEXT_PUBLIC_WEBSITE_TITLE}: {process.env.NEXT_PUBLIC_WEBSITE_SUBTITLE}</title>
         <meta name="description" content={metaDescription} />
       </Head>
       {rows &&

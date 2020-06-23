@@ -4,7 +4,7 @@ export default function FrequentlyAskedQuestions({fields}) {
   const { questions } = fields;
 
   return (
-    <div className="frequently-asked-questions">
+    <div className="frequently-asked-questions wrapper">
 
       <ul className="faq-page__contents">
         {questions.map((question, idx) => <QuestionLink {...question} key={idx} />)}

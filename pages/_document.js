@@ -125,7 +125,7 @@ export default class MyDocument extends Document {
           max-width: 1280px;
           padding: 0 var(--gutter);
         }
-        .content a {
+        .page a {
           color: var(--persimmon);
         }
       `}</style>

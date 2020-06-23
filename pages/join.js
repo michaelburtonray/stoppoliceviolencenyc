@@ -1,8 +1,8 @@
 import { getPage } from '../services/contentful-queries';
 
-import JoinPage from '../components/JoinPage';
+import Page from '../components/Page';
 
-const JoinPageContainer = (props) => <JoinPage {...props} />
+const JoinPageContainer = (props) => <Page {...props} />
 
 JoinPageContainer.getInitialProps = async ({ err, req, res, pathname, query, asPath }) => {
 
