@@ -42,8 +42,11 @@ export default class MyDocument extends Document {
 
         body {
           background: #fff2e5;
+          display: grid;
           font-family: 14px/22px Crimson Text,serif;
+          grid-template-rows: auto 1fr auto;
           margin: 0;
+          min-height: 100vh;
         }
 
         h1 {
