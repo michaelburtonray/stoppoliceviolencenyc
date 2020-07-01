@@ -131,6 +131,10 @@ export default class MyDocument extends Document {
         .page a {
           color: var(--persimmon);
         }
+
+        .text-row img {
+          max-width: 100%;
+        }
       `}</style>
     </html>
     )
