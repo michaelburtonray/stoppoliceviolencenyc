@@ -34,8 +34,11 @@ export default class Header extends React.Component {
                 <div className="mainnav__subnavigation"><a href="/join#attend-a-meeting">Attend a Meeting</a>
                 <a href="/join#join-a-working-group">Join a working group</a></div>
             </span>
-            <Link scroll={false} href="/petition">
+            {false && <Link scroll={false} href="/petition">
               <a className={`mainnav-anchor`}>Sign the Petition</a>
+            </Link>}
+            <Link scroll={false} href="/next-steps">
+              <a className={`mainnav-anchor`}>What Can I Do?</a>
             </Link>
             <Link scroll={false} href="/legislation">
               <a className="mainnav-anchor">The Legislation</a>
