@@ -29,11 +29,11 @@ export default class Header extends React.Component {
           <label htmlFor="active-checkbox" className="menu-button header__bars" onClick={this.toggleActiveMobileNav()}><i className="fa fa-bars" aria-hidden="true"></i></label>
           <input type="checkbox" className="active-checkbox" id="active-checkbox" />
           <nav className="mainnav">
-            <span>
+            {false && <span>
                 <a className="mainnav-anchor" href="/join">Join the Campaign</a>
                 <div className="mainnav__subnavigation"><a href="/join#attend-a-meeting">Attend a Meeting</a>
                 <a href="/join#join-a-working-group">Join a working group</a></div>
-            </span>
+            </span>}
             {false && <Link scroll={false} href="/petition">
               <a className={`mainnav-anchor`}>Sign the Petition</a>
             </Link>}
